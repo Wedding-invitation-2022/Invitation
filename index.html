@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sina & Soghol Wedding</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Signika+Negative:wght@300;400;500;600&display=swap');
+        @font-face {
+            font-family: nastaliq;
+            src: url('./IranNastaliq.ttf');
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
+        body, html {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .main-wrapper {
+            height: 100vh;
+            width: 100%;
+            background : linear-gradient(to bottom, rgba(58, 36, 0, 0.6), rgba(58, 36, 0, 0.6)),
+            url('./leather.jpg');
+            background-position: center;
+            display: flex;
+            justify-content: center;
+        }
+        .diamond-bg {
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            .desktop {
+              display: none;
+            }
+          }
+        @media only screen and (min-width: 600px) {
+        .phone {
+            display: none;
+        }
+        }
+        .text-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 140px 0px;
+        }
+        .eng-intro {
+            font-weight: lighter;
+            font-family: 'Arima', cursive;
+            letter-spacing: 3px;
+            margin: 14px 0px;
+            padding: 0px 80px;
+            text-align: center;
+        }
+        .eng-name {
+            font-size: 44px;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 32px;
+        }
+        .persian-one {
+            padding: 10px 60px;
+            direction: rtl;
+            font-family: 'nastaliq';
+            line-height: 35px;
+            text-align: center;
+        }
+        .persian-names {
+            direction: rtl;
+            font-family: 'nastaliq';
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            margin-top: -20px;
+            font-size: 28px;
+        }
+        .persian-location {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            padding: 0 60px;
+            font-family: 'nastaliq';
+            line-height: 29px;
+        }
+        .animate__delay-200 {
+            animation-delay: 1000ms;
+        }
+        .animate__delay-1000 {
+            animation-delay: 1500ms;
+        }
+        .animate__delay-1500 {
+            animation-delay: 2000ms;
+        }
+        .animate__delay-2000 {
+            animation-delay: 2500ms;
+        }
+    </style>
+    <div class="main-wrapper">
+        <img class="diamond-bg desktop animate__animated animate__fadeIn" src="./gifBgDesktop.gif" alt="diamon">
+        <img class="diamond-bg phone animate__animated animate__fadeIn" src="./gifBg.gif" alt="diamon">
+        <div class="text-wrapper">
+            <span class="eng-intro animate__animated animate__fadeIn">Welcome to the wedding of</span>
+            <span class="eng-name animate__animated animate__fadeIn animate__delay-200">Sogol <span style="font-size: 20px;">&</span> Sina</span>
+            <br>
+            <span class="persian-one animate__animated animate__fadeIn animate__delay-1000">
+                آغاز زندگی مشترک خود را جشن می گیریم.
+حضور پر مهر شما سرور و نشاط جمع ما را دو چندان خواهد کرد. 
+منتظریم تا با قدوم مبارک تان مجلس بزم و ضیافت شام ما را مزین فرمایند .
+            </span>
+            <div class="persian-names animate__animated animate__fadeIn animate__delay-1500">
+                <span>
+                    احمری
+                </span>
+                <span>
+                    عبدالهی فرد
+                </span>
+            </div>
+            <div class="persian-location animate__animated animate__fadeIn animate__delay-2000">
+                <span>
+                    مکان : تبریز، باغ شخصی
+                </span>
+                <span>
+                    آدرس دقیق قبل مراسم در همین وب سایت آپلود خواهد شد.
+                </span>
+                <span>
+                    خواهشمند است در صورت عدم امکان حضور در اولین فرصت اطلاع رسانی فرمایند. 
+                </span>
+                <span>
+                    تلفن تماس ۰۹۰۳۰۵۰۷۶۰۰ و ۰۹۱۴۱۱۵۶۴۷۱
+                </span>
+                <span>
+                    داریوش عبدالهی فرد
+                </span>
+            </div>
+        </div>
+    </div>
+    <audio controls autoplay>
+        <source src="./Kansas Dust In The Wind.mp3" type="audio/mpeg">
+      </audio>
+</body>
+</html>
