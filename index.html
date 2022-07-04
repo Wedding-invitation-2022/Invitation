@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sina & Soghol Wedding</title>
+    <title>Sina & Sogol Wedding</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -78,6 +78,16 @@
             line-height: 35px;
             text-align: center;
         }
+        .persian-names-one {
+            direction: rtl;
+            font-family: 'nastaliq';
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin-top: -20px;
+            font-size: 36px;
+            gap: 20px;
+        }
         .persian-names {
             direction: rtl;
             font-family: 'nastaliq';
@@ -95,6 +105,13 @@
             padding: 0 60px;
             font-family: 'nastaliq';
             line-height: 29px;
+       
+        }
+        .date{
+            font-family: 'nastaliq';
+            margin: 20px 0px;
+            direction: rtl;
+            text-align: left;
         }
         .animate__delay-200 {
             animation-delay: 1000ms;
@@ -105,19 +122,24 @@
         .animate__delay-1500 {
             animation-delay: 2000ms;
         }
+        .animate__delay-1800 {
+            animation-delay: 2200ms;
+        }
         .animate__delay-2000 {
             animation-delay: 2500ms;
+        }
+        .music {
+            opacity: 0;
         }
     </style>
     <div class="main-wrapper">
         <img class="diamond-bg desktop animate__animated animate__fadeIn" src="./gifBgDesktop.gif" alt="diamon">
         <img class="diamond-bg phone animate__animated animate__fadeIn" src="./gifBg.gif" alt="diamon">
         <div class="text-wrapper">
-            <span class="eng-intro animate__animated animate__fadeIn">Welcome to the wedding of</span>
-            <span class="eng-name animate__animated animate__fadeIn animate__delay-200">Sogol <span style="font-size: 20px;">&</span> Sina</span>
+            <span class="persian-names-one animate__animated animate__fadeIn animate__delay-200">سوگل <span style="margin-bottom:-30px">و</span> سینا</span>
             <br>
             <span class="persian-one animate__animated animate__fadeIn animate__delay-1000">
-                آغاز زندگی مشترک خود را جشن می گیریم.
+                آغاز زندگی مشترک خود را جشن می گیرند.
 حضور پر مهر شما سرور و نشاط جمع ما را دو چندان خواهد کرد. 
 منتظریم تا با قدوم مبارک تان مجلس بزم و ضیافت شام ما را مزین فرمایند .
             </span>
@@ -125,9 +147,13 @@
                 <span>
                     احمری
                 </span>
+                <span>-</span>
                 <span>
                     عبدالهی فرد
                 </span>
+            </div>
+            <div class="date animate__animated animate__fadeIn animate__delay-1800">
+                ۳۱ تیرماه ۱۴۰۱ ساعت ۶ عصر تا ۱ بامداد
             </div>
             <div class="persian-location animate__animated animate__fadeIn animate__delay-2000">
                 <span>
@@ -140,16 +166,14 @@
                     خواهشمند است در صورت عدم امکان حضور در اولین فرصت اطلاع رسانی فرمایند. 
                 </span>
                 <span>
-                    تلفن تماس ۰۹۰۳۰۵۰۷۶۰۰ و ۰۹۱۴۱۱۵۶۴۷۱
+                    تلفن تماس&nbsp; &nbsp;  ۰۹۰۳۰۵۰۷۶۰۰ 
                 </span>
-                <span>
-                    داریوش عبدالهی فرد
-                </span>
+              
             </div>
         </div>
     </div>
-    <audio controls autoplay>
+    <audio class="music" controls autoplay>
         <source src="./Kansas Dust In The Wind.mp3" type="audio/mpeg">
-      </audio>
+    </audio>
 </body>
 </html>
